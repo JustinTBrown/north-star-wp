@@ -1,0 +1,315 @@
+.logo{
+	width: 180px;
+	height: 120px;
+	margin: 40px auto 10px auto;
+	@media #{$large-up} {
+		margin: 20px;
+	};
+}
+.navigation{
+	border-top: 2px solid $blue;
+	text-align: right;
+	padding: 10px 0 0 0;
+	@media #{$large-up} {
+		padding: 18px 0 0 0;
+		border-top: none;
+		height: 150px;
+	};
+}
+.sign-up-in{
+	margin: 0 0 1em 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid $iron;
+	@media #{$large-up} {
+		margin: 0;
+		padding: 0;
+		border-bottom: 0;
+	};
+}
+.sign-up-in a{
+	color: $grey;
+	font-size: 0.66em;
+	font-weight: 400;
+	margin: 0 0 5px 0;
+}
+.sign-up-in a:last-child{
+	margin: 0;
+}
+a.sign-up{
+	display: inline-block;
+	margin: 0 2em 0 0;
+	@media #{$large-up} {
+		display: block;
+		margin: 0;
+	};
+}
+a.sign-up:hover{
+	color: $blue;
+}
+a.sign-in{
+
+}
+a.sign-in:hover{
+	color: $grey;
+}
+.main{
+	margin: 0 0 1em 0;
+	text-align: center;
+	@media #{$large-up} {
+		text-align: right;
+		position: absolute;
+		bottom: 30px;
+		right: 20px;
+		margin: 0;
+	};
+}
+.main ul{
+	margin: 0;
+}
+.main li{
+	white-space: nowrap;
+	display: inline;
+	margin: 0 2em 0 0;
+	@media #{$large-up} {
+		white-space: normal;
+	};
+}
+.main li:last-of-type{
+	margin: 0 0 0 0;
+}
+.main a{
+	color: $grey;
+	font-size: 14px;
+	font-weight: 500;
+}
+a.navlink-1:hover{
+	color: $blue;
+}
+a.navlink-2:hover{
+	color: $aqua;
+}
+a.navlink-3:hover{
+	color: $teal;
+}
+a.navlink-4:hover{
+	color: $green;
+}
+a.navlink-5:hover{
+	color: $yellow-green;
+}
+
+section{
+	font-weight: 300;
+	text-align: center;
+}
+
+// INTRODUCTION SECTION
+.introduction{
+	background: url("http://localhost:8888/wp-content/uploads/2014/09/Home_image.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 420px;
+	padding: 3em 0;
+	@media #{$large-up} {
+		background-size: cover;
+		background-position: center;
+		height: 612px;
+		padding: 5em 0;
+	}
+}
+.introduction .row{
+	height: 420px;
+	@media #{$large-up} {
+		height: 612px;
+	};
+}
+.introduction p{
+	text-align: center;
+	font-weight: 200;
+}
+.personal-intro{
+	margin: 0 0 4em 0;
+	@media #{$large-up} {
+		margin: 0 0 10em 0;
+	};
+}
+.personal-intro p{
+	color: white;
+	font-size: 1.3em;
+	@media #{$large-up} {
+		font-size: 24px;
+	};
+}
+.large{
+	font-weight: 200;
+}
+.personal-intro .large{
+	display: block;
+	font-size: 1.5em;
+	line-height: 0.9em;
+	@media #{$large-up} {
+		font-size: 44px;
+	};
+}
+.starting-questions{
+	position: absolute;
+	bottom: 4em;
+	@media #{$large-up} {
+		bottom: 9em;
+	};
+}
+.starting-questions p{
+	color: #BCD430;
+	font-size: 1.1em;
+	@media #{$large-up} {
+		font-size: 20px;
+	};
+}
+.starting-questions .large{
+	display: block;
+	font-size: 1.5em;
+	line-height: 43px;
+	@media #{$large-up} {
+		font-size: 36px;
+	};
+}
+
+// QUESTION & ANSWER SECTIONS
+.question-and-answer{
+	padding: 3em 0 2.5em 0;
+}
+.question-and-answer p{
+	text-align: center;
+	color: #FFFFFF;
+}
+.question-and-answer .question-line{
+	display: block;
+	margin: 0 auto;
+}
+.question span{
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 43px;
+}
+.question h2{
+	margin: 0 0 1em 0;
+	font-size: 36px;
+}
+.circle{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+	border-radius: 50%;
+	border: 2px solid $white;
+	margin: 0 auto 0 auto;
+}
+.circle .fi-arrow-down{
+	font-size: 28px;
+	position: relative;
+	margin: 0;
+	// Why can't I clear the content padding in the Accordion settings?
+	top: -11px;
+	left: 1px;
+
+}
+.answer p{
+	font-size: 20px;
+}
+.answer span{
+	display: block;
+	margin: 0.7em 0 25px 0;
+	font-size: 36px;
+	line-height: 43px;
+}
+.first-question,
+.first-question #panel1{
+	background: $yellow-green;
+}
+.second-question,
+.second-question #panel2{
+	background: $green;
+}
+.third-question,
+.third-question #panel3{
+	background: $teal;
+}
+.fourth-question{
+	padding: 3em 0 3em 0;
+}
+.fourth-question,
+.fourth-question #panel4{
+	background: $aqua;
+}
+.fourth-question .answer,
+.fourth-question p{
+	text-align: left;
+}
+.get-started,
+.get-started #panel5{
+	background: $blue;
+}
+.alternate-button,
+button.alternate-button{
+	color: $white;
+	background: transparent;
+	// font-size: 2em;
+	font-size: 36px;
+	font-weight: 200;
+	border: solid 1px $white;
+	padding: 15px 46px;
+	margin: 60px auto;
+}
+.alternate-button:hover{
+	color: $white;
+	background: rgba(255,255,255,0.35);
+}
+footer{
+	color: $grey;
+	padding: 2.5em 0;
+	height: 250px;
+}
+footer .content{
+	@media #{$large-up} {
+		height: 250px;
+	};
+}
+.footer-logo{
+	width: 180px;
+	display: block;
+	margin: 0 auto 2em auto;
+	@media #{$large-up} {
+		margin: 0 0 2.5em 0;
+	};
+}
+footer .large-4{
+}
+nav.footer{
+	border-bottom: solid 2px $blue;
+	padding: 0 0 1em 0;
+	margin: 0 0 3em 0;
+	@media #{$large-up} {
+		border-left: solid 1px $blue;
+		border-bottom: none;
+		margin: 0;
+	};
+}
+.footer ul{
+	list-style: none;
+	text-align: left;
+}
+.copyright{
+	text-align: center;
+	font-size: 0.7em;
+	@media #{$large-up} {
+		position: absolute;
+		bottom: 0;
+		margin: 0;
+		text-align: left;
+	};
+}
+.footer a{
+	color: $grey;
+	font-size: 14px;
+	font-weight: 500;
+}

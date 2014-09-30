@@ -1,0 +1,63 @@
+.hero{
+	// background: url(../img/AboutUs_image.jpg);
+	// background: url("http://localhost:8888/wp-content/uploads/2014/09/AboutUs_image.jpg");
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+	@media #{$medium-up} {
+		height: 400px;
+		background-position: top;
+	};
+	@media #{$large-up} {
+		background-position: top;
+		height: 492px;
+	};
+}
+.about-us-page{
+	background: $blue;
+}
+.how-we-can-help-page{
+	background: $aqua;
+}
+.what-is-online-counselling-page{
+	background: $teal;
+}
+.how-it-works-page{
+	background: $green;
+}
+.fees-page{
+	background: $yellow-green;
+}
+.secondary-page{
+	border-top: solid 2px $white;
+	padding: 76px 0 120px 0;
+	text-align: left;
+}
+.secondary-page h1{
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 43px;
+	margin: 0;
+}
+.secondary-page h2{
+	font-size: 36px;
+	font-weight: 200;
+	line-height: 43px;
+	margin: 0 0 20px 0;
+}
+.secondary-page p{
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 24px;
+}
+.secondary-page h3{
+	font-size: 30px;
+	font-weight: 200;
+	line-height: 36px;
+	margin: 0 0 20px 0;
+}
+.secondary-page button.alternate-button{
+	font-size: 36px;
+	margin: 1em 0 1.25em 0;
+}
+
