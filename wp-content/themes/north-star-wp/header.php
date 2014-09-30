@@ -72,7 +72,7 @@
 						<?php 
 							$pages = get_pages();
 							foreach ($pages as $page) {
-								echo '<li><a href="<? echo get_permalink(); >" class="navlink-1">' . get_the_title($page) . '</a></li>';
+								echo '<li><a href="' . get_page_link($page) . ' " class="navlink-1">' . get_the_title($page) . '</a></li>';
 							};
 						?>
 
