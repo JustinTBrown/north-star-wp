@@ -58,40 +58,20 @@
 	      </nav>
 	      <nav class="main">
 	        <ul>
-
 						<?php
-							// Grab the home page object 
 							$home_id = get_option('page_on_front');
-
-							// initailize arg variables for get_pages() below
 							$args = array(
-								// instruct get_pages() to only pull sub-pages of the home page
 								'sort_column' => 'menu_order',
 								'child_of' => $home_id,
 							);
-
 							$pages = get_pages( $args );
+
 							foreach ($pages as $page) {
-								echo '<li><a href="' . get_page_link($page) . ' " class="navlink-1">' . get_the_title($page) . '</a></li>';
+								$page_title = get_the_title($page);
+								$pg_title = mb_convert_case( $page_title , MB_CASE_UPPER);
+								echo '<li><a href="' . get_page_link($page) . ' " class="navlink-' . $page->menu_order . '">' . $pg_title . '</a></li>';
 							};
 						?>
-
-	          <li>
-	            <!-- <a href="page-about.php" class="navlink-1">ABOUT US</a> -->
-	            <a href="<?php echo get_page_link(19); ?>" class="navlink-1">ABOUT US</a>
-	          </li>
-	          <li>
-	            <a href="<?php echo get_page_link(28); ?>" class="navlink-2">HOW WE CAN HELP</a>
-	          </li>
-	          <li>
-	            <a href="<?php echo get_page_link(31); ?>" class="navlink-3">WHAT IS ONLINE COUNSELLING</a>
-	          </li>
-	          <li>
-	            <a href="<?php echo get_page_link(34); ?>" class="navlink-4">HOW IT WORKS</a>
-	          </li>
-	          <li>
-	            <a href="<?php echo get_page_link(36); ?>" class="navlink-5">FEES</a>
-	          </li>
 	        </ul>
 	      </nav>
 	    </div>
