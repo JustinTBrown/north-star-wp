@@ -58,6 +58,18 @@
 	      </nav>
 	      <nav class="main">
 	        <ul>
+						<?php 
+							if (have_posts()) :
+								while (have_posts()) :
+									the_post();
+										// the_content();
+									// echo get_the_title();
+									// $list-item = get_the_title();
+									echo '<li><a href="<? echo get_permalink(); >" class="navlink-1">' . get_the_title() . '</a></li>';
+								endwhile;
+							endif;
+						?>
+
 	          <li>
 	            <!-- <a href="page-about.php" class="navlink-1">ABOUT US</a> -->
 	            <a href="<?php echo get_page_link(19); ?>" class="navlink-1">ABOUT US</a>
