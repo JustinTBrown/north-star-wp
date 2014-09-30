@@ -58,7 +58,7 @@
 	      </nav>
 	      <nav class="main">
 	        <ul>
-						<?php 
+<!-- 						<?php 
 							if (have_posts()) :
 								while (have_posts()) :
 									the_post();
@@ -68,6 +68,12 @@
 									echo '<li><a href="<? echo get_permalink(); >" class="navlink-1">' . get_the_title() . '</a></li>';
 								endwhile;
 							endif;
+						?> -->
+						<?php 
+							$pages = get_pages();
+							foreach ($pages as $page) {
+								echo '<li><a href="<? echo get_permalink(); >" class="navlink-1">' . get_the_title($page) . '</a></li>';
+							};
 						?>
 
 	          <li>
