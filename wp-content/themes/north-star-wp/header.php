@@ -58,19 +58,19 @@
 	      </nav>
 	      <nav class="main">
 	        <ul>
-<!-- 						<?php 
-							if (have_posts()) :
-								while (have_posts()) :
-									the_post();
-										// the_content();
-									// echo get_the_title();
-									// $list-item = get_the_title();
-									echo '<li><a href="<? echo get_permalink(); >" class="navlink-1">' . get_the_title() . '</a></li>';
-								endwhile;
-							endif;
-						?> -->
-						<?php 
-							$pages = get_pages();
+
+						<?php
+							// Grab the home page object 
+							$home_id = get_option('page_on_front');
+
+							// initailize arg variables for get_pages() below
+							$args = array(
+								// instruct get_pages() to only pull sub-pages of the home page
+								'sort_column' => 'menu_order',
+								'child_of' => $home_id,
+							);
+
+							$pages = get_pages( $args );
 							foreach ($pages as $page) {
 								echo '<li><a href="' . get_page_link($page) . ' " class="navlink-1">' . get_the_title($page) . '</a></li>';
 							};
