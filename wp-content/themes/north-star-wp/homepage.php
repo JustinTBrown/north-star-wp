@@ -2,11 +2,9 @@
 /*
 Template Name: HOME
 */
+define( 'WP_USE_THEMES', false );
 get_header(); ?>
-<!-- <div class="row">
-	<div class="small-12 large-12 columns" role="main"> -->
-<!-- <p>TESTING! TESTING!</p>
- -->
+
 <section class="introduction">
   <div class="row small-centered medium-10 large-8 columns">
     <div class="personal-intro">
@@ -24,6 +22,27 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
+<!-- ACCORDION DIVS -->
+
+<?php $query = new WP_Query( 'category_name=homepage' ); ?>
+<?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+
+  <section class="question-and-answer first-question">
+    <div class="row small-centered medium-10 large-8 columns">
+      <dl class="accordion" data-accordion>
+        <dd class="accordion-navigation">
+          <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+          HELLO?
+          <?php the_content(); ?>
+        </dd>
+      </dl>
+    </div>
+  </section>
+
+<?php endwhile; else : ?>
+  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
 
 <!-- FIRST SECTION -->
 <section class="question-and-answer first-question">

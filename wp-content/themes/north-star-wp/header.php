@@ -43,7 +43,7 @@
 	<header class="row">
 	  <div class="large-3 columns">
 	    <h1 class="logo">
-	      <a href="#">
+	      <a href="/">
 	      	<!-- <img src="<?php echo wp_get_attachment_image( ); ?>" alt="<?php bloginfo( 'name' ); ?>"> -->
 	        <!-- <img src="img/north-star-logo.png" alt="North Star Counselling"> -->
 	        <img src="http://localhost:8888/wp-content/uploads/2014/09/north-star-logo.png" alt="North Star Counselling">
