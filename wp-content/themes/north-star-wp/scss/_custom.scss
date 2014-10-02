@@ -177,6 +177,7 @@ section{
 // QUESTION & ANSWER SECTIONS
 .question-and-answer{
 	padding: 3em 0 2.5em 0;
+	border-top: solid 1px $white;
 }
 .question-and-answer p{
 	text-align: center;
@@ -247,6 +248,7 @@ section{
 }
 .get-started,
 .get-started #panel5{
+	border-top: solid 1px $white;
 	background: $blue;
 }
 .alternate-button,
