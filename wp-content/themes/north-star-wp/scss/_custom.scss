@@ -222,27 +222,27 @@ section{
 	font-size: 36px;
 	line-height: 43px;
 }
-.first-question,
-.first-question #panel1{
+.question-1,
+.question-1 #panel1{
 	background: $yellow-green;
 }
-.second-question,
-.second-question #panel2{
+.question-2,
+.question-2 #panel2{
 	background: $green;
 }
-.third-question,
-.third-question #panel3{
+.question-3,
+.question-3 #panel3{
 	background: $teal;
 }
-.fourth-question{
+.question-4{
 	padding: 3em 0 3em 0;
 }
-.fourth-question,
-.fourth-question #panel4{
+.question-4,
+.question-4 #panel4{
 	background: $aqua;
 }
-.fourth-question .answer,
-.fourth-question p{
+.question-4 .answer,
+.question-4 p{
 	text-align: left;
 }
 .get-started,

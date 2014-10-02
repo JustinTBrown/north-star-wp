@@ -24,28 +24,50 @@ get_header(); ?>
 </section>
 
 <!-- ACCORDION DIVS -->
-
-<?php $query = new WP_Query( 'category_name=homepage' ); ?>
+<?php 
+  $args = array(
+    'category_name=homepage,-Uncategorized',
+    // 'meta_key'   => 'order',
+    // 'orderby'    => 'meta_value_num',
+    'orderby'     => 'title',
+    'order'       => 'ASC',
+    // 'orderby'     => 'ID',
+  );
+?>
+<?php $query = new WP_Query( $args ); ?>
 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
-  <section class="question-and-answer first-question">
+  <?php $meta = get_post_custom(); ?>
+  <section class="question-and-answer question-<?php echo $meta['order'][0]; ?>">
     <div class="row small-centered medium-10 large-8 columns">
       <dl class="accordion" data-accordion>
         <dd class="accordion-navigation">
-          <h2><a href="<?php the_permalink(); ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
-          HELLO?
-          <?php the_content(); ?>
+          <div class="question">
+            <header>
+              <span> <?php echo $meta['question-pre'][0]; ?></span>
+              <h2> <?php echo $meta['question-main'][0]; ?> </h2>
+            </header>
+          </div>
+          <a href="#panel<?php echo $meta['order'][0]; ?>" class="circle">
+            <i class="fi-arrow-down"></i>
+          </a>
+          <div id="panel<?php echo $meta['order'][0]; ?>" class="content answer">
+            <span class="large"> <?php echo $meta['answer'][0]; ?> </span>
+            <p>
+              <?php echo $meta['explanation'][0]; ?>
+            </p>
+          </div>
         </dd>
       </dl>
     </div>
   </section>
 
 <?php endwhile; else : ?>
-  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+  <!-- do nothing -->
 <?php endif; ?>
 
 <!-- FIRST SECTION -->
-<section class="question-and-answer first-question">
+<!-- <section class="question-and-answer first-question">
   <div class="row small-centered medium-10 large-8 columns">
     <dl class="accordion" data-accordion>
       <dd class="accordion-navigation">
@@ -67,10 +89,10 @@ get_header(); ?>
       </dd>
     </dl>
   </div>
-</section>
+</section> -->
 
 <!-- SECOND SECTION -->
-<section class="question-and-answer second-question">
+<!-- <section class="question-and-answer second-question">
   <div class="row small-centered medium-10 large-8 columns">
     <dl class="accordion" data-accordion>
       <dd class="accordion-navigation">
@@ -92,10 +114,10 @@ get_header(); ?>
       </dd>
     </dl>
   </div>
-</section>
+</section> -->
 
 <!-- THIRD SECTION -->
-<section class="question-and-answer third-question">
+<!-- <section class="question-and-answer third-question">
   <div class="row small-centered medium-10 large-8 columns">
     <dl class="accordion" data-accordion>
       <dd class="accordion-navigation">
@@ -117,15 +139,11 @@ get_header(); ?>
       </dd>
     </dl>
   </div>
-</section>
+</section> -->
 
 <!-- FOURTH SECTION -->
-<section class="question-and-answer fourth-question">
+<!-- <section class="question-and-answer fourth-question">
   <div class="row small-centered columns">
-    
-<!--       <div class="row small-centered medium-10 large-8 columns">
-      .row.small-centered.medium-10.large-8.columns
-    </div> -->
     <dl class="accordion" data-accordion>
       <dd class="accordion-navigation">
         <div class="question">
@@ -171,12 +189,10 @@ get_header(); ?>
       </dd>
     </dl>
   </div>
-</section>
+</section> -->
 
 <!-- FIFTH SECTION -->
 <section class="get-started">
-  <!-- <a href="#" class="alternate-button">Let's begin...</a> -->
-  <!-- <button>Let's begin...</button> -->
   <a href="#">
     <button class="alternate-button">Let's begin...</button>
   </a>
