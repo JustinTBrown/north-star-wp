@@ -1,0 +1,118 @@
+.logo{
+	width: 135px;
+	height: 90px;
+	margin: 27px auto 10px auto;
+	@media #{$medium-up} {
+		width: 165px;
+		height: 110px;
+	};
+	@media #{$large-up} {
+		margin: 20px;
+	};
+}
+.navigation{
+	border-top: 2px solid $blue;
+	text-align: right;
+	padding: 10px 0 0 0;
+	@media #{$large-up} {
+		padding: 18px 0 0 0;
+		border-top: none;
+		// height: 150px;
+		height: 140px;
+	};
+}
+.sign-up-in{
+	margin: 0 0 1em 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid $iron;
+	text-align: center;
+	@media #{$large-up} {
+		text-align: right;
+		margin: 0;
+		padding: 0;
+		border-bottom: 0;
+	};
+}
+.sign-up-in a{
+	color: $grey;
+	font-size: 0.66em;
+	font-weight: 400;
+	margin: 0 0 5px 0;
+}
+.sign-up-in a:last-child{
+	margin: 0;
+}
+a.sign-up{
+	display: inline-block;
+	margin: 0 2em 0 0;
+	@media #{$large-up} {
+		display: block;
+		margin: 0;
+	};
+}
+a.sign-up:hover{
+	color: $blue;
+}
+a.sign-in{
+
+}
+a.sign-in:hover{
+	color: $grey;
+}
+.main{
+	margin: 0 0 1em 0;
+	text-align: center;
+	@media #{$large-up} {
+		text-align: right;
+		position: absolute;
+		// bottom: 30px;
+		bottom: 23px;
+		right: 20px;
+		margin: 0;
+	};
+}
+.main ul{
+	margin: 0;
+	// @include inline-list;
+}
+.main li{
+	// white-space: nowrap;
+	white-space: pre-wrap;
+	display: inline;
+	margin: 0 2em 0 0;
+	@media #{$large-up} {
+		white-space: normal;
+	};
+}
+.main li:last-of-type{
+	margin: 0 0 0 0;
+}
+.main a{
+	color: $grey;
+	font-size: 12px;
+	font-weight: 400;
+	@media #{$medium-up} {
+		font-size: 14px;
+		font-weight: 500;
+	};
+}
+a.navlink-1:hover{
+	color: $blue;
+}
+a.navlink-2:hover{
+	color: $aqua;
+}
+a.navlink-3:hover{
+	color: $teal;
+}
+a.navlink-4:hover{
+	color: $green;
+}
+a.navlink-5:hover{
+	color: $yellow-green;
+}
+
+section{
+	font-weight: 300;
+	text-align: center;
+}

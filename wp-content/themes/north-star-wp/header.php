@@ -78,7 +78,7 @@
 	  </div>
 	</header>
 
-	<nav class="tab-bar show-for-small-only">
+	<!-- <nav class="tab-bar show-for-small-only">
 		<section class="left-small">
 			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
 		</section>
@@ -87,7 +87,7 @@
 			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
 
 		</section>
-	</nav>
+	</nav> -->
 
 	<?php get_template_part('parts/off-canvas-menu'); ?>
 
