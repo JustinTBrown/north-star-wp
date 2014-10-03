@@ -48,14 +48,28 @@ get_header(); ?>
               <h2> <?php echo $meta['question-main'][0]; ?> </h2>
             </header>
           </div>
+
           <a href="#panel<?php echo $meta['order'][0]; ?>" class="circle">
-            <i class="fi-arrow-down"></i>
-          </a>
-          <div id="panel<?php echo $meta['order'][0]; ?>" class="content answer">
-            <span class="large"> <?php echo $meta['answer'][0]; ?> </span>
-            <p>
-              <?php echo $meta['explanation'][0]; ?>
+            <p class="down-arrow rotate-90">
+              &#62;
             </p>
+          </a>
+
+          <div id="panel<?php echo $meta['order'][0]; ?>" class="content answer">
+
+            <?php if ( $meta['left-justified'][0] == yes ) {
+              echo '<div class="medium-2 large-3 columns"><br></div><div class="medium-9 large-7 columns">';
+            } ?>
+
+              <span class="large"> <?php echo $meta['answer'][0]; ?> </span>
+              <p>
+                <?php echo $meta['explanation'][0]; ?>
+              </p>
+            
+            <?php if ( $meta['left-justified'][0] == yes ) {
+              echo '</div><div class="medium-1 large-2 columns"><br></div>';
+            } ?>
+
           </div>
         </dd>
       </dl>

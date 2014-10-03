@@ -1,108 +1,3 @@
-// .logo{
-// 	width: 180px;
-// 	height: 120px;
-// 	margin: 40px auto 10px auto;
-// 	@media #{$large-up} {
-// 		margin: 20px;
-// 	};
-// }
-// .navigation{
-// 	border-top: 2px solid $blue;
-// 	text-align: right;
-// 	padding: 10px 0 0 0;
-// 	@media #{$large-up} {
-// 		padding: 18px 0 0 0;
-// 		border-top: none;
-// 		height: 150px;
-// 	};
-// }
-// .sign-up-in{
-// 	margin: 0 0 1em 0;
-// 	padding: 0 0 10px 0;
-// 	border-bottom: 1px solid $iron;
-// 	@media #{$large-up} {
-// 		margin: 0;
-// 		padding: 0;
-// 		border-bottom: 0;
-// 	};
-// }
-// .sign-up-in a{
-// 	color: $grey;
-// 	font-size: 0.66em;
-// 	font-weight: 400;
-// 	margin: 0 0 5px 0;
-// }
-// .sign-up-in a:last-child{
-// 	margin: 0;
-// }
-// a.sign-up{
-// 	display: inline-block;
-// 	margin: 0 2em 0 0;
-// 	@media #{$large-up} {
-// 		display: block;
-// 		margin: 0;
-// 	};
-// }
-// a.sign-up:hover{
-// 	color: $blue;
-// }
-// a.sign-in{
-
-// }
-// a.sign-in:hover{
-// 	color: $grey;
-// }
-// .main{
-// 	margin: 0 0 1em 0;
-// 	text-align: center;
-// 	@media #{$large-up} {
-// 		text-align: right;
-// 		position: absolute;
-// 		bottom: 30px;
-// 		right: 20px;
-// 		margin: 0;
-// 	};
-// }
-// .main ul{
-// 	margin: 0;
-// }
-// .main li{
-// 	white-space: nowrap;
-// 	display: inline;
-// 	margin: 0 2em 0 0;
-// 	@media #{$large-up} {
-// 		white-space: normal;
-// 	};
-// }
-// .main li:last-of-type{
-// 	margin: 0 0 0 0;
-// }
-// .main a{
-// 	color: $grey;
-// 	font-size: 14px;
-// 	font-weight: 500;
-// }
-// a.navlink-1:hover{
-// 	color: $blue;
-// }
-// a.navlink-2:hover{
-// 	color: $aqua;
-// }
-// a.navlink-3:hover{
-// 	color: $teal;
-// }
-// a.navlink-4:hover{
-// 	color: $green;
-// }
-// a.navlink-5:hover{
-// 	color: $yellow-green;
-// }
-
-// section{
-// 	font-weight: 300;
-// 	text-align: center;
-// }
-
 // INTRODUCTION SECTION
 .introduction{
 	background: url("http://localhost:8888/wp-content/uploads/2014/09/Home_image.jpg");
@@ -213,6 +108,33 @@
 	// Why can't I clear the content padding in the Accordion settings?
 	top: -11px;
 	left: 1px;
+}
+p.down-arrow {
+	font-size: 43px;
+	font-weight: 200;
+	margin: 0;
+	position: relative;
+	top: -24px;
+	left: 4px;
+
+}
+p.rotate-90 {
+	transform: rotate(90deg);
+
+	/* Safari */
+	-webkit-transform: rotate(90deg);
+
+	/* Firefox */
+	-moz-transform: rotate(90deg);
+
+	/* IE */
+	-ms-transform: rotate(90deg);
+
+	/* Opera */
+	-o-transform: rotate(90deg);
+
+	/* Internet Explorer */
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
 
 }
 .answer p{
@@ -246,6 +168,7 @@
 .question-4 .answer,
 .question-4 p{
 	text-align: left;
+	
 }
 .get-started,
 .get-started #panel5{

@@ -34,3 +34,8 @@
 ?>
 
 <?php $query = new WP_Query( 'category_name=homepage' ); ?>
+
+<?php if ( $meta['order'][0] == 4); ?>
+<div class="medium-2 large-3 columns"><br></div>
+<div class="medium-9 large-7 columns">
+<?php endif; ?>
