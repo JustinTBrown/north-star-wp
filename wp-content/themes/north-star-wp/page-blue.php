@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: ABOUT US
+Template Name: BLUE PAGE
 */
 get_header(); ?>
 
@@ -22,7 +22,7 @@ get_header(); ?>
 ?>
 
 <!-- ABOUT US -->
-<section class="secondary-page about-us-page">
+<section class="secondary-page blue-page">
   <div class="row">
     <div class="medium-3 large-4 columns"><br></div>
     <div class="medium-8 large-7 columns">

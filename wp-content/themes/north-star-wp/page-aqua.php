@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: FEES
+Template Name: AQUA PAGE
 */
 get_header(); ?>
 
@@ -22,7 +22,7 @@ get_header(); ?>
 ?>
 
 <!-- ABOUT US -->
-<section class="secondary-page fees-page">
+<section class="secondary-page aqua-page">
   <div class="row">
     <div class="medium-3 large-4 columns"><br></div>
     <div class="medium-8 large-7 columns">

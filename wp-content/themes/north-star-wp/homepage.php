@@ -5,7 +5,24 @@ Template Name: HOME
 define( 'WP_USE_THEMES', false );
 get_header(); ?>
 
-<section class="introduction">
+<!-- INTRODUCTION-HERO SECTION -->
+<?php
+  // Must be inside a loop.
+
+  if ( has_post_thumbnail() ) {
+    $post_thumbnail_id = get_post_thumbnail_id( $page->ID );
+    $post_thumbnail_link = wp_get_attachment_url( $post_thumbnail_id );
+    // $a = '<section class="hero" style="background-image:url(';
+    // $b = $post_thumbnail_link;
+    // $c = ')";></section>';
+    // echo $a . $b . $c;
+  }
+  else {
+    // do nothing
+  }
+?>
+
+<section class="introduction" style="background-image:url( <?php echo $post_thumbnail_link; ?> )">
   <div class="row small-centered medium-10 large-8 columns">
     <div class="personal-intro">
       <p>
@@ -26,8 +43,9 @@ get_header(); ?>
 <!-- ACCORDION DIVS -->
 <?php 
   $args = array(
-    'category_name=homepage,-Uncategorized',
-    // 'meta_key'   => 'order',
+    // 'category_name=homepage,-Uncategorized',
+    'cat=-4',
+    // 'meta_key'   => 'post-order',
     // 'orderby'    => 'meta_value_num',
     'orderby'     => 'title',
     'order'       => 'ASC',
@@ -38,7 +56,7 @@ get_header(); ?>
 <?php if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
   <?php $meta = get_post_custom(); ?>
-  <section class="question-and-answer question-<?php echo $meta['order'][0]; ?>">
+  <section class="question-and-answer question-<?php echo $meta['post-order'][0]; ?>">
     <div class="row small-centered medium-10 large-8 columns">
       <dl class="accordion" data-accordion>
         <dd class="accordion-navigation">
@@ -49,13 +67,13 @@ get_header(); ?>
             </header>
           </div>
 
-          <a href="#panel<?php echo $meta['order'][0]; ?>" class="circle">
+          <a href="#panel<?php echo $meta['post-order'][0]; ?>" class="circle">
             <p class="down-arrow rotate-90">
               &#62;
             </p>
           </a>
 
-          <div id="panel<?php echo $meta['order'][0]; ?>" class="content answer">
+          <div id="panel<?php echo $meta['post-order'][0]; ?>" class="content answer">
 
             <?php if ( $meta['left-justified'][0] == yes ) {
               echo '<div class="medium-2 large-3 columns"><br></div><div class="medium-9 large-7 columns">';

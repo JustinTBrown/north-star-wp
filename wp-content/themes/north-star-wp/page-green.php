@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: WHAT IS ONLINE COUNSELLING
+Template Name: GREEN PAGE
 */
 get_header(); ?>
 
@@ -22,7 +22,7 @@ get_header(); ?>
 ?>
 
 <!-- ABOUT US -->
-<section class="secondary-page what-is-online-counselling-page">
+<section class="secondary-page green-page">
   <div class="row">
     <div class="medium-3 large-4 columns"><br></div>
     <div class="medium-8 large-7 columns">
