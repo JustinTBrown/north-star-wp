@@ -38,7 +38,7 @@
   </div>
   <div class="large-7 large-pull-4 columns content">
     <a href="/">
-      <img src="http://localhost:8888/wp-content/uploads/2014/10/north-star-logo.png" alt="North Star Counselling" class="footer-logo">
+      <img src="/wp-content/uploads/2014/10/north-star-logo.png" alt="North Star Counselling" class="footer-logo">
     </a>
     <p class="copyright">COPYRIGHT © 2014 NORTH STAR COUNSELLING LTD. ALL RIGHTS RESERVED / PRIVACY POLICY</p>
   </div>
