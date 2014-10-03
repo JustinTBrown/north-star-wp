@@ -63,7 +63,8 @@ get_header(); ?>
 
               <span class="large"> <?php echo $meta['answer'][0]; ?> </span>
               <p>
-                <?php echo $meta['explanation'][0]; ?>
+<!--                 <?php echo $meta['explanation'][0]; ?> -->
+                <?php the_content(); ?>
               </p>
             
             <?php if ( $meta['left-justified'][0] == yes ) {
