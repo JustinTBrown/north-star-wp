@@ -176,6 +176,7 @@ p.rotate-90 {
 	background: $blue;
 }
 .alternate-button,
+input.alternate-button,
 button.alternate-button{
 	color: $white;
 	background: transparent;
@@ -189,6 +190,7 @@ button.alternate-button{
 .alternate-button:hover{
 	color: $white;
 	background: rgba(255,255,255,0.35);
+	box-shadow: none;
 }
 footer{
 	color: $grey;

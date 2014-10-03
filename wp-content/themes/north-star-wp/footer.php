@@ -14,7 +14,7 @@
         <!-- <span></span> -->
         <br>
         <li>
-          <a href="#" class="navlink-1">CONTACT US</a>
+          <a href="/?page_id=79" class="navlink-1">CONTACT US</a>
         </li>
         <!-- <span></span> -->
         <br>
