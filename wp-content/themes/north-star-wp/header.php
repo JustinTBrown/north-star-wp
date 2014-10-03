@@ -28,16 +28,6 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-precomposed.png">
-
-		<!-- // <script src="js/"></script> -->
-		// <script type="text/javascript">
-		// 	$(function() {
-		// 		$(".accordion").on("click", "dd:not(.active)", function (event) {
-		// 			$("dd.active").removeClass('active').find(".content").slideUp("fast");
-		// 			$(this).addClass('active').find(".content").slideToggle("fast");
-		// 		});
-		// 	});
-		// </script>
 		
 		<?php wp_head(); ?>
 	</head>
@@ -88,20 +78,4 @@
 	  </div>
 	</header>
 
-	<!-- <nav class="tab-bar show-for-small-only">
-		<section class="left-small">
-			<a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-		</section>
-		<section class="middle tab-bar-section">
-			
-			<h1 class="title"><?php bloginfo( 'name' ); ?></h1>
-
-		</section>
-	</nav> -->
-
-	<!-- <?php get_template_part('parts/off-canvas-menu'); ?> -->
-
-	<!-- <?php get_template_part('parts/top-bar'); ?> -->
-
-<!-- <section class="container" role="document"> -->
 	<?php do_action('foundationPress_after_header'); ?>
