@@ -46,7 +46,8 @@
 	      <a href="/">
 	      	<!-- <img src="<?php echo wp_get_attachment_image( ); ?>" alt="<?php bloginfo( 'name' ); ?>"> -->
 	        <!-- <img src="img/north-star-logo.png" alt="North Star Counselling"> -->
-	        <img src="http://localhost:8888/wp-content/uploads/2014/09/north-star-logo.png" alt="North Star Counselling">
+	        <!-- <img src="http://localhost:8888/wp-content/uploads/2014/09/north-star-logo.svg" alt="North Star Counselling"> -->
+	        <img src="http://localhost:8888/wp-content/uploads/2014/10/north-star-logo.png" alt="North Star Counselling">
 	      </a>
 	    </h1>
 	  </div>

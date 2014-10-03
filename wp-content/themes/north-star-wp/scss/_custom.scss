@@ -168,7 +168,7 @@ p.rotate-90 {
 .question-4 .answer,
 .question-4 p{
 	text-align: left;
-	
+
 }
 .get-started,
 .get-started #panel5{
@@ -192,8 +192,13 @@ button.alternate-button{
 }
 footer{
 	color: $grey;
-	padding: 2.5em 0;
-	height: 250px;
+	// padding: 2.5em 0;
+	padding: 1em 0;
+	margin: 2em 0;
+	// height: 250px;
+}
+footer.row{
+	margin-top: 1em;
 }
 footer .content{
 	@media #{$large-up} {
@@ -201,19 +206,20 @@ footer .content{
 	};
 }
 .footer-logo{
-	width: 180px;
+	// width: 180px;
+	width: 135px;
 	display: block;
 	margin: 0 auto 2em auto;
 	@media #{$large-up} {
+		width: 165px;
 		margin: 0 0 2.5em 0;
 	};
 }
-footer .large-4{
-}
 nav.footer{
 	border-bottom: solid 2px $blue;
-	padding: 0 0 1em 0;
-	margin: 0 0 3em 0;
+	// padding: 0 0 1em 0;
+	padding: 0;
+	margin: 0 0 2em 0;
 	@media #{$large-up} {
 		border-left: solid 1px $blue;
 		border-bottom: none;
