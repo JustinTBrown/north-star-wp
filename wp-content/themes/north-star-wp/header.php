@@ -28,6 +28,16 @@
 		<link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-114x114-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-72x72-precomposed.png">
 		<link rel="apple-touch-icon-precomposed" href="<?php echo get_stylesheet_directory_uri() ; ?>/assets/img/icons/apple-touch-icon-precomposed.png">
+
+		<!-- // <script src="js/"></script> -->
+		// <script type="text/javascript">
+		// 	$(function() {
+		// 		$(".accordion").on("click", "dd:not(.active)", function (event) {
+		// 			$("dd.active").removeClass('active').find(".content").slideUp("fast");
+		// 			$(this).addClass('active').find(".content").slideToggle("fast");
+		// 		});
+		// 	});
+		// </script>
 		
 		<?php wp_head(); ?>
 	</head>
@@ -51,12 +61,12 @@
 	    </h1>
 	  </div>
 	  <div class="large-9 columns">
-	    <div class="navigation">
-	      <nav class="sign-up-in">
+	    <div class="navigation row">
+	      <nav class="sign-up-in small-12 small-push-12 columns">
 	        <a href="#" class="sign-up">SIGN UP AND LET US HELP</a>
 	        <a href="#" class="sign-in button tiny">SIGN IN</a>
 	      </nav>
-	      <nav class="main">
+	      <nav class="main small-12 small-pull-12 columns">
 	        <ul>
 						<?php
 							$home_id = get_option('page_on_front');
@@ -89,9 +99,9 @@
 		</section>
 	</nav> -->
 
-	<?php get_template_part('parts/off-canvas-menu'); ?>
+	<!-- <?php get_template_part('parts/off-canvas-menu'); ?> -->
 
 	<!-- <?php get_template_part('parts/top-bar'); ?> -->
 
-<section class="container" role="document">
+<!-- <section class="container" role="document"> -->
 	<?php do_action('foundationPress_after_header'); ?>

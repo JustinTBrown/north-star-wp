@@ -67,22 +67,41 @@ a.sign-in:hover{
 		position: absolute;
 		// bottom: 30px;
 		bottom: 23px;
-		right: 20px;
+		// right: 20px;
+		right: 0px;
 		margin: 0;
 	};
 }
 .main ul{
 	margin: 0;
+	// list-style-type: disc;
+	// display: list-item;
 	// @include inline-list;
+	// display: inline;
 }
 .main li{
 	// white-space: nowrap;
 	white-space: pre-wrap;
 	display: inline;
-	margin: 0 2em 0 0;
+	margin: 0 0.8em 0 0;
 	@media #{$large-up} {
 		white-space: normal;
+		margin: 0 2em 0 0;
 	};
+}
+.main li::before{
+	// content: "TEST";
+	content: '\2022\a0';
+	color: $grey;
+	margin: 0 0.4em 0 0;
+	@media #{$large-up} {
+		content: '';
+		margin: 0;
+	}
+}
+.main li:first-of-type::before{
+	content: "";
+	margin: 0;
 }
 .main li:last-of-type{
 	margin: 0 0 0 0;
