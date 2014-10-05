@@ -23,20 +23,36 @@ get_header(); ?>
 ?>
 
 <section class="introduction" style="background-image:url( <?php echo $post_thumbnail_link; ?> )">
+  <?php $home_id =  get_option( 'page_on_front'); ?>
+  <!-- <?php echo $home_id; ?> -->
+  <!-- <?php $home_meta = get_post_meta( $home_id, 'lets-begin-link', true); ?> -->
+  <!-- <?php echo $home_meta; ?> -->
+  <!-- <?php echo get_post_meta( $home_id, 'welcome', true); ?> -->
+
+  <?php $intro_meta = get_post_custom(); ?>
+
+
   <div class="row small-centered medium-10 large-8 columns">
-    <div class="personal-intro">
+<!--     <div class="personal-intro">
       <p>
-        Welcome to North Star.
-        <span class="large">I'm Cheryl McDougall.</span>
-        MSW RSW
+        <?php echo $intro_meta['welcome'][0]; ?>
+        <span class="large"><?php echo $intro_meta['name'][0]; ?></span>
+        <?php echo $intro_meta['cred'][0]; ?>
       </p>
     </div>
+
     <div class="starting-questions">
       <p>
         Before we go any further,
         <span class="large">let me put your mind at rest by answering your three most important questions.</span>
       </p>
-    </div>
+    </div> -->
+
+    <?php while (have_posts()) : the_post(); ?>
+      <?php do_action('foundationPress_page_before_entry_content'); ?>
+      <?php the_content(); ?>
+    <?php endwhile;?>
+
   </div>
 </section>
 

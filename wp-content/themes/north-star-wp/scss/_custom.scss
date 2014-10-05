@@ -5,6 +5,8 @@
 	background-size: cover;
 	height: 420px;
 	padding: 3em 0;
+	text-align: center;
+	font-weight: 200;
 	@media #{$large-up} {
 		background-size: cover;
 		background-position: center;
@@ -19,24 +21,36 @@
 	};
 }
 .introduction p{
-	text-align: center;
-	font-weight: 200;
+	// text-align: center;
+	// font-weight: 200;
+}
+.introduction br{
+	margin: 0;
+	padding: 0;
+	font-size: 0;
 }
 .personal-intro{
+	line-height: 2em;
 	margin: 0 0 4em 0;
 	@media #{$large-up} {
 		margin: 0 0 10em 0;
 	};
-}
-.personal-intro p{
 	color: white;
 	font-size: 1.3em;
 	@media #{$large-up} {
 		font-size: 24px;
 	};
 }
+.personal-intro p{
+	// color: white;
+	// font-size: 1.3em;
+	// @media #{$large-up} {
+	// 	font-size: 24px;
+	// };
+}
 .large{
 	font-weight: 200;
+
 }
 .personal-intro .large{
 	display: block;
@@ -52,13 +66,18 @@
 	@media #{$large-up} {
 		bottom: 9em;
 	};
-}
-.starting-questions p{
 	color: #BCD430;
 	font-size: 1.1em;
 	@media #{$large-up} {
 		font-size: 20px;
 	};
+}
+.starting-questions p{
+	// color: #BCD430;
+	// font-size: 1.1em;
+	// @media #{$large-up} {
+	// 	font-size: 20px;
+	// };
 }
 .starting-questions .large{
 	display: block;
