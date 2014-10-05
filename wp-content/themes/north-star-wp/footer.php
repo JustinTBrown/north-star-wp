@@ -40,7 +40,10 @@
     <a href="/">
       <img src="/wp-content/uploads/2014/10/north-star-logo.png" alt="North Star Counselling" class="footer-logo">
     </a>
-    <p class="copyright">COPYRIGHT © 2014 NORTH STAR COUNSELLING LTD. ALL RIGHTS RESERVED</p>
+    <p class="copyright">
+      COPYRIGHT © 2014 NORTH STAR COUNSELLING LTD. ALL RIGHTS RESERVED
+       / <a href="/wp-admin" class="navlink-1">ADMIN</a>
+    </p>
   </div>
   <?php do_action('foundationPress_after_footer'); ?>
 </footer>
