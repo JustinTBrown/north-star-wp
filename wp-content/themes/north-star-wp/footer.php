@@ -6,33 +6,29 @@
     <nav class="footer">
       <ul>
         <li>
-          <a href="#" class="navlink-1">SIGN UP AND LET US HELP</a>
+          <a href="http://northstarcounselling.privacemail.com/" class="navlink-1">SIGN UP AND LET US HELP</a>
         </li>
         <li>
-          <a href="#" class="navlink-1">MEMBER SIGN IN</a>
+          <a href="http://northstarcounselling.privacemail.com/" class="navlink-1">MEMBER SIGN IN</a>
         </li>
-        <!-- <span></span> -->
         <br>
         <li>
           <a href="/?page_id=79" class="navlink-1">CONTACT US</a>
         </li>
-        <!-- <span></span> -->
         <br>
-        <li>
-          <a href="#" class="navlink-1">ABOUT US</a>
-        </li>
-        <li>
-          <a href="#" class="navlink-2">HOW WE CAN HELP</a>
-        </li>
-        <li>
-          <a href="#" class="navlink-3">WHAT IS ONLINE COUNSELLING</a>
-        </li>
-        <li>
-          <a href="#" class="navlink-4">HOW IT WORKS</a>
-        </li>
-        <li>
-          <a href="#" class="navlink-5">FEES</a>
-        </li>
+        <?php
+          $home_id = get_option('page_on_front');
+          $args = array(
+            'sort_column' => 'menu_order',
+            'child_of' => $home_id,
+          );
+          $pages = get_pages( $args );
+          foreach ($pages as $page) {
+            $page_title = get_the_title($page);
+            $pg_title = mb_convert_case( $page_title , MB_CASE_UPPER);
+            echo '<li><a href="' . get_page_link($page) . ' " class="navlink-' . $page->menu_order . '">' . $pg_title . '</a></li>';
+          };
+        ?>
       </ul>
     </nav>
   </div>
