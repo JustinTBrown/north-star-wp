@@ -60,10 +60,10 @@
 	      <nav class="main small-12 small-pull-12 columns">
 	        <ul>
 						<?php
-							$home_id = get_option('page_on_front');
 							$args = array(
 								'sort_column' => 'menu_order',
-								'child_of' => $home_id,
+								'meta_key' => 'secondary_page',
+								'meta_value' => 'yes',
 							);
 							$pages = get_pages( $args );
 

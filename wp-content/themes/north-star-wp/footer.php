@@ -13,14 +13,15 @@
         </li>
         <br>
         <li>
-          <a href="/?page_id=79" class="navlink-1">CONTACT US</a>
+          <a href="/contact" class="navlink-1">CONTACT US</a>
         </li>
         <br>
         <?php
           $home_id = get_option('page_on_front');
           $args = array(
             'sort_column' => 'menu_order',
-            'child_of' => $home_id,
+            'meta_key' => 'secondary_page',
+            'meta_value' => 'yes',
           );
           $pages = get_pages( $args );
           foreach ($pages as $page) {
@@ -38,7 +39,6 @@
     </a>
     <p class="copyright">
       COPYRIGHT © 2014 NORTH STAR COUNSELLING LTD. ALL RIGHTS RESERVED
-       / <a href="/wp-admin" class="navlink-1">ADMIN</a>
     </p>
   </div>
   <?php do_action('foundationPress_after_footer'); ?>

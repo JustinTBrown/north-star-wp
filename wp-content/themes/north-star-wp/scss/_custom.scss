@@ -211,6 +211,11 @@ button.alternate-button{
 	background: rgba(255,255,255,0.35);
 	box-shadow: none;
 }
+button.alternate-button:focus,
+button.alternate-button:active{
+	// box-shadow: none !important;
+	outline: none;
+}
 footer{
 	color: $grey;
 	// padding: 2.5em 0;
