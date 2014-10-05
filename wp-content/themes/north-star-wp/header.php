@@ -54,8 +54,8 @@
 	  <div class="large-9 columns">
 	    <div class="navigation row">
 	      <nav class="sign-up-in small-12 small-push-12 columns">
-	        <a href="#" class="sign-up">SIGN UP AND LET US HELP</a>
-	        <a href="#" class="sign-in button tiny">SIGN IN</a>
+	        <a href="http://northstarcounselling.privacemail.com/" class="sign-up">SIGN UP AND LET US HELP</a>
+	        <a href="http://northstarcounselling.privacemail.com/" class="sign-in button tiny">SIGN IN</a>
 	      </nav>
 	      <nav class="main small-12 small-pull-12 columns">
 	        <ul>

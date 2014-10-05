@@ -101,8 +101,9 @@ get_header(); ?>
 
 
 <!-- FIFTH SECTION -->
+
 <section class="get-started">
-  <a href="#">
+  <a href="http://northstarcounselling.privacemail.com/">
     <button class="alternate-button">Let's begin...</button>
   </a>
 </section>
