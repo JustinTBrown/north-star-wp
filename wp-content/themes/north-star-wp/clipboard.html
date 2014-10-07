@@ -69,3 +69,7 @@
   }
 ?>
 <section class="hero" style="background-image:url( <?php echo $post_thumbnail_link; ?>);"></section>
+
+              <a href="<?php the_permalink(); ?>" class="navlink-<?php get_post_custom_values('menu_order', get_the_ID;); ?>">
+                <?php get_the_title(); ?>
+              </a>

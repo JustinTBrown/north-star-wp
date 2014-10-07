@@ -13,7 +13,7 @@
         </li>
         <br>
         <li>
-          <a href="/contact" class="navlink-1">CONTACT US</a>
+          <a href="/contact" class="navlink-1 <?php if (is_page('contact')) {echo "is-current";} ?>">CONTACT US</a>
         </li>
         <br>
         <?php
@@ -27,7 +27,14 @@
           foreach ($pages as $page) {
             $page_title = get_the_title($page);
             $pg_title = mb_convert_case( $page_title , MB_CASE_UPPER);
-            echo '<li><a href="' . get_page_link($page) . ' " class="navlink-' . $page->menu_order . '">' . $pg_title . '</a></li>';
+            $current_page_title = get_the_title();
+            if ( $page_title == $current_page_title ) {
+              $is_current = ' is-current';
+            } else {
+              // nothing
+            }
+            echo '<li><a href="' . get_page_link($page) . ' " class="navlink-' . $page->menu_order . $is_current . '">' . $pg_title . '</a></li>';
+            $is_current = "";
           };
         ?>
       </ul>
