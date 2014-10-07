@@ -11,11 +11,13 @@
         <li>
           <a href="http://northstarcounselling.privacemail.com/" class="navlink-1">MEMBER SIGN IN</a>
         </li>
-        <br>
+        <!-- <br> -->
+        <div class="list-break"></div>
         <li>
           <a href="/contact" class="navlink-1 <?php if (is_page('contact')) {echo "is-current";} ?>">CONTACT US</a>
         </li>
-        <br>
+        <div class="list-break"></div>
+        <!-- <br> -->
         <?php
           $home_id = get_option('page_on_front');
           $args = array(

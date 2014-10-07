@@ -228,7 +228,7 @@ footer.row{
 }
 footer .content{
 	@media #{$large-up} {
-		height: 250px;
+		height: 200px;
 	};
 }
 .footer-logo{
@@ -255,6 +255,12 @@ nav.footer{
 .footer ul{
 	list-style: none;
 	text-align: left;
+}
+.footer li{
+	line-height: 1.2em;
+}
+.list-break{
+	height: 1em;
 }
 .copyright{
 	text-align: center;
