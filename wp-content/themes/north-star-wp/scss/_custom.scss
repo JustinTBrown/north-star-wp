@@ -32,14 +32,14 @@
 .personal-intro{
 	line-height: 2em;
 	margin: 0 0 4em 0;
-	@media #{$large-up} {
-		margin: 0 0 10em 0;
-	};
 	color: white;
 	font-size: 1.3em;
 	@media #{$large-up} {
+		margin: 0 0 10em 0;
 		font-size: 24px;
 	};
+	// @media #{$large-up} {
+	// };
 }
 .personal-intro p{
 	// color: white;
@@ -63,14 +63,14 @@
 .starting-questions{
 	position: absolute;
 	bottom: 4em;
-	@media #{$large-up} {
-		bottom: 9em;
-	};
 	color: #BCD430;
 	font-size: 1.1em;
 	@media #{$large-up} {
+		bottom: 9em;
 		font-size: 20px;
 	};
+	// @media #{$large-up} {
+	// };
 }
 .starting-questions p{
 	// color: #BCD430;
