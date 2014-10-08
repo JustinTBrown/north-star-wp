@@ -14,5 +14,5 @@ $(".accordion").on("click", "dd", function (event) {
             $(this).addClass('active').find(".content").slideToggle("fast");    
         }
 });
-console.log("hello??");
-console.log("hello again??");
+// console.log("hello??");
+// console.log("hello again??");
