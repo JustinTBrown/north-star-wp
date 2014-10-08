@@ -228,7 +228,7 @@ footer.row{
 }
 footer .content{
 	@media #{$large-up} {
-		height: 200px;
+		height: 187px;
 	};
 }
 .footer-logo{
@@ -259,8 +259,16 @@ nav.footer{
 .footer li{
 	line-height: 1.2em;
 }
-.list-break{
-	height: 1em;
+.footer li:last-of-type{
+	margin: 0 0 1em 0;
+}
+p.list-break{
+	// display: inline-block;
+	// height: 1em;
+	// margin: 0.5em;
+	// line-height: 1em;
+	// line-height: 0.5em;
+	margin: 0.8em;
 }
 .copyright{
 	text-align: center;

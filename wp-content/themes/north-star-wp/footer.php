@@ -12,11 +12,13 @@
           <a href="http://northstarcounselling.privacemail.com/" class="navlink-1">MEMBER SIGN IN</a>
         </li>
         <!-- <br> -->
-        <div class="list-break"></div>
+        <p class="list-break"></p>
+        <!-- <div class="list-break"></div> -->
         <li>
           <a href="/contact" class="navlink-1 <?php if (is_page('contact')) {echo "is-current";} ?>">CONTACT US</a>
         </li>
-        <div class="list-break"></div>
+        <!-- <div class="list-break"></div> -->
+        <p class="list-break"></p>
         <!-- <br> -->
         <?php
           $home_id = get_option('page_on_front');
@@ -31,7 +33,7 @@
             $pg_title = mb_convert_case( $page_title , MB_CASE_UPPER);
             $current_page_title = get_the_title();
             if ( $page_title == $current_page_title ) {
-              $is_current = ' is-current';
+              $is_current = " is-current";
             } else {
               // nothing
             }
