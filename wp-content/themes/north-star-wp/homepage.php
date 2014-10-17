@@ -119,7 +119,7 @@ get_header(); ?>
 <!-- FIFTH SECTION -->
 
 <section class="get-started">
-  <a href="http://northstarcounselling.privacemail.com/">
+  <a href="https://northstarcounselling.privacemail.com/index.php?page=register" onclick="ga('send', 'event', 'Home', 'Click', 'Let\'s Begin');">
     <button class="alternate-button">Let's begin...</button>
   </a>
 </section>

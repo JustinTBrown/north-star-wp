@@ -41,23 +41,26 @@
 	<?php do_action('foundationPress_layout_start'); ?>
 	
 	<header class="row">
+	  <!-- Mobile only sign in/up nav -->
+   	  <nav class="sign-up-in small-12 columns hide-for-large-up">
+    	<a href="https://northstarcounselling.privacemail.com/index.php?page=register" class="sign-up" onclick="ga('send', 'event', 'Header', 'Click', 'Sign up');">SIGN UP AND LET US HELP</a>
+    	<a href="http://northstarcounselling.privacemail.com/" class="sign-in button tiny" onclick="ga('send', 'event', 'Header', 'Click', 'Sign in');">SIGN IN</a>
+  	  </nav>
 	  <div class="large-3 columns">
 	    <h1 class="logo">
 	      <a href="/">
-	      	<!-- <img src="<?php echo wp_get_attachment_image( ); ?>" alt="<?php bloginfo( 'name' ); ?>"> -->
-	        <!-- <img src="img/north-star-logo.png" alt="North Star Counselling"> -->
-	        <!-- <img src="http://localhost:8888/wp-content/uploads/2014/09/north-star-logo.svg" alt="North Star Counselling"> -->
 	        <img src="/wp-content/uploads/2014/10/north-star-logo.png" alt="North Star Counselling">
 	      </a>
 	    </h1>
 	  </div>
 	  <div class="large-9 columns">
 	    <div class="navigation row">
-	      <nav class="sign-up-in small-12 small-push-12 columns">
-	        <a href="http://northstarcounselling.privacemail.com/" class="sign-up">SIGN UP AND LET US HELP</a>
-	        <a href="http://northstarcounselling.privacemail.com/" class="sign-in button tiny">SIGN IN</a>
+	      <!-- Large and up sign in/up nav -->
+	      <nav class="sign-up-in small-12 hide-for-small-only hide-for-medium-only show-for-large-up columns">
+	        <a href="https://northstarcounselling.privacemail.com/index.php?page=register" class="sign-up" onclick="ga('send', 'event', 'Header', 'Click', 'Sign up');">SIGN UP AND LET US HELP</a>
+	        <a href="http://northstarcounselling.privacemail.com/" class="sign-in button tiny" onclick="ga('send', 'event', 'Header', 'Click', 'Sign in');">SIGN IN</a>
 	      </nav>
-	      <nav class="main small-12 small-pull-12 columns">
+	      <nav class="main small-12 columns">
 	        <ul>
 						<?php
 							$args = array(

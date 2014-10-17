@@ -1,15 +1,15 @@
 <!-- FOOTER -->
 <footer class="row">
-	<?php do_action('foundationPress_before_footer'); ?>
+  <?php do_action('foundationPress_before_footer'); ?>
   <div class="large-1 columns"></div>
   <div class="large-4 large-push-8 columns">
     <nav class="footer">
       <ul>
         <li>
-          <a href="http://northstarcounselling.privacemail.com/" class="navlink-1">SIGN UP AND LET US HELP</a>
+          <a href="https://northstarcounselling.privacemail.com/index.php?page=register" class="navlink-1" onclick="ga('send', 'event', 'Footer', 'Click', 'Sign up');">SIGN UP AND LET US HELP</a>
         </li>
         <li>
-          <a href="http://northstarcounselling.privacemail.com/" class="navlink-1">MEMBER SIGN IN</a>
+          <a href="http://northstarcounselling.privacemail.com/" class="navlink-1" onclick="ga('send', 'event', 'Footer', 'Click', 'Sign in');">MEMBER SIGN IN</a>
         </li>
         <!-- <br> -->
         <p class="list-break"></p>
@@ -61,5 +61,15 @@
 
 <?php wp_footer(); ?>
 <?php do_action('foundationPress_before_closing_body'); ?>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-55613798-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </body>
 </html>
