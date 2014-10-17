@@ -42,6 +42,13 @@
 	line-height: 24px;
 	margin: 0 0 1.8em 0;
 }
+.contact-page a {
+	color: #fff;
+	text-decoration: underline;
+	&:hover {
+		text-decoration: none;
+	}
+}
 .contact-page h3{
 	font-size: 30px;
 	font-weight: 200;

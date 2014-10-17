@@ -11,10 +11,11 @@
 	};
 }
 .navigation{
-	border-top: 2px solid $blue;
+	border-top: 1px solid $iron;
 	text-align: right;
 	padding: 10px 0 0 0;
 	@media #{$large-up} {
+		border-top: 2px solid $blue;
 		padding: 18px 0 0 0;
 		border-top: none;
 		// height: 150px;
